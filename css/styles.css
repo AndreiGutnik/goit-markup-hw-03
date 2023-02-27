@@ -177,14 +177,13 @@ body {
 }
 
 .hero-title {
+	width: 496px;
+	margin: 0 auto 48px;
+
   color: var(--secondary-font-color);
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  
-  margin-top: 0;
-  margin-bottom: 48px;
-
 }
 
 .hero-button {
@@ -211,6 +210,52 @@ body {
 	background-color: var(--accent-button-color);
 }
 
+/* Advantage */
+.advantages-list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.advantages-list .text{
+	width: 264px;
+}
+
+/* Occupation */
+.occupation-list{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Team */
+.team{
+	background-color: var(--secondary-button-color);
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.team-item{
+	background-color: var(--primary-background-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  width: 264px;
+  padding-bottom: 32px;
+}
+
+.team-img,
+.work-img{
+  display: block;
+}
+
+.team-label{
+  text-align: center;
+  margin: 32px 0 0;
+}
+
 /* Portfolio */
 .portfolio-section{
   padding-top: 96px;
@@ -218,6 +263,12 @@ body {
 }
 
 /* Filtr */
+.filtr-list{
+	display: flex;
+	justify-content: center;
+  margin-bottom: 24px;
+}
+
 .filtr-button {
   background-color: var(--secondary-button-color);
 
@@ -236,51 +287,36 @@ body {
 	cursor: pointer;
 }
 
+.filtr-item:not(:first-child){
+	margin-left: 24px;
+}
+
 .filtr-button:hover,
 .filtr-button:focus {
   background-color: var(--accent-button-color);
   color: var(--secondary-font-color);
 }
 
-.filtr-list{
-  margin-bottom: 72px;
-}
-
-/* Team */
-.section.team{
-	background-color: var(--secondary-button-color);
-
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.team-item{
-	background-color: var(--primary-background-color);
-  border-radius: 0px 0px 4px 4px;
-  width: 264px;
-  padding-bottom: 32px;
-}
-
-.team-img,
-.work-img{
-  display: block;
-}
-
-.team-label{
-  text-align: center;
-  margin: 32px 0 0;
-}
-
 /* Works */
+.works-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.work-item{
+	width: 360px;
+	margin-top: 48px;
+  border: 1px solid #E7E9FC;
+}
+
+.work-item:not(:nth-child(3n)){
+	margin-right: 24px;
+}
+
 .work-link{
   display: block;
 	text-decoration: none;
   padding-bottom: 32px;
-}
-
-.work-item{
-  width: 360px;
-  border: 1px solid #E7E9FC;
 }
 
 .work-label{
